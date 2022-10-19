@@ -1,0 +1,30 @@
+.pageContent {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+
+.ButtonAccept {
+  background: #54ff40;
+}
+
+.ButtonAccept:disabled {
+  background: none;
+}
+
+.sectionFooter {
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.tableContent {
+  max-height: 23rem;
+  overflow: auto;
+}

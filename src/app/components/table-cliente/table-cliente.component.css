@@ -1,0 +1,29 @@
+table {
+  width: auto;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 1rem !important;
+  margin: 1rem !important;
+  width: 12rem;
+  white-space: nowrap;
+}
+
+.bottonsGroup {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ButtonDelete {
+  background: #ff1100cf;
+}
+
+.ButtonEdit {
+  background: #f1e87b;
+}

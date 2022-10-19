@@ -1,0 +1,13 @@
+.CardHeader {
+  font-size: 1.4rem;
+  padding: 0.7rem;
+  border-bottom: 1px inset;
+}
+.CardBody {
+  padding: 1rem;
+}
+
+.CardFooter {
+  padding: 0.5rem;
+  border-top: 1px inset;
+}

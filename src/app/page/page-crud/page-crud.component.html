@@ -1,3 +1,38 @@
-<p>
-  page-crud works!
-</p>
+<div class="pageContent">
+  <app-card>
+    <section CardHeader>
+      Cadastrar
+    </section>
+    <section CardBody>
+      <div class="sectionBody">
+        <div>
+          <mat-form-field class="input">
+            <mat-label>Nome</mat-label>
+            <input name="name" [(ngModel)]="name" matInput>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field class="input">
+            <mat-label>Telefone</mat-label>
+            <input name="phone" [(ngModel)]="phone" type="tel" matInput>
+          </mat-form-field>
+        </div>
+      </div>
+    </section>
+    <section CardFooter>
+      <div class="sectionFooter">
+        <button (click)="clearInput()" class="ButtonClear" mat-raised-button color="warn">Limpar</button>
+        <button (click)="addData()" class="ButtonAccept" [disabled]="isSave()" mat-raised-button>Cadastrar</button>
+      </div>
+    </section>
+  </app-card>
+  <app-card>
+    <section CardHeader>
+      Cadastrados
+    </section>
+    <section CardBody class="tableContent">
+      <app-table-cliente [data]="dataSource" (editDataEvent)="editData($event)" (delDataEvent)="deleteData($event)">
+      </app-table-cliente>
+    </section>
+  </app-card>
+</div>
